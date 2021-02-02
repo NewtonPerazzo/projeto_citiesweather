@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="icon" type="image/png" href="{% static 'img/favi.png' %}">
+    <link rel="stylesheet" href="{% static 'css/css.css' %}">
+
+<body>
+    <header class="menu-principal">
+        <main>
+            <div class="header-1">
+                <div class="logo">
+                    <a href="/">
+                        <img style="width: 60px; height: 50px" src="{% static 'img/termometro.png'%}" alt="img">
+                        <a class="titulo">CITIES WEATHER</a>
+                    </a>
+                </div>
+                <div class="redes-sociais">
+                    <ul>
+                        <li>
+                            <a href="https://www.linkedin.com/in/newton-perazzo/" target="_blank">
+                                <img src="{% static 'img/in.png'%}" alt="img">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/newtonperazzo" target="_blank">
+                                <img src="{% static 'img/github.png'%}" alt="img">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{% url 'contatos' %}">
+                                <img src="{% static 'img/contatos.png'%}" alt="img">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </header>
+    {% block content %}
+    {% endblock %}
+    <footer>
+        <p>Desenvolvido por Newton Perazzo</p>
+        Referências:
+        <p>
+            GIF: <a href="https://www.wisecrop.com/pt/apps/clima" target="_blank">Wise Crop</a> |
+            Ícones: <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a> |
+            Imagens: <a href="https://www.flaticon.com/br/" target="_blank">Flaticon</a>
+        </p>
+    </footer>
+</body>
+</html>

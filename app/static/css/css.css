@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.main {
+    width: 980px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.logo {
+    padding: 10px;
+    width: 60%;
+    float: left;
+    margin-bottom: 2px;
+}
+
+.menu-principal {
+    height: 70px;
+    width: 100%;
+    background-image: linear-gradient(to bottom, #5296ef, #444baf 130%);
+    margin: 0;
+}
+
+.titulo {
+    display: inline-block;
+    float: left;
+    margin-top: 15px;
+    color: white;
+    font-family: "Oldtown", fantasy;
+}
+
+.redes-sociais ul li {
+    display: inline-block;
+    float: left;
+    margin-left: 20px;
+    margin-top: 18px;
+}
+
+.redes-sociais {
+    width: 20%;
+    float: right;
+}
+
+.redes-sociais img {
+    width: 30px;
+    height: 30px;
+}
+
+.contatos ul li{
+}
+
+.card {
+    padding: 30px;
+    border: black;
+}
+
+.dados {
+    width: 700px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #cdc3c3;
+    margin-right: 25px;
+    font-family: "Calibri Light", sans-serif;
+    margin-top: 25px;
+    margin-left: 10px;
+}
+
+.sensacao {
+    color: forestgreen;
+}
+
+.clima {
+    color: saddlebrown;
+}
+
+.maxima {
+    color: red;
+}
+
+.minima {
+    color: dodgerblue;
+}
+
+.umidade {
+    color: cornflowerblue;
+}
+
+.clima-div {
+    padding-left: 10px;
+    font-size: 24px;
+}
+
+.sensacao-div {
+    padding-left: 10px;
+    font-size: 24px;
+}
+
+.maxima-div {
+    padding-left: 10px;
+    font-size: 24px;
+}
+
+.minima-div {
+    padding-left: 10px;
+    font-size: 24px;
+}
+
+.umidade-div{
+    padding-left: 10px;
+    font-size: 24px;
+}
+
+.bi-thermometer-half {
+    color: saddlebrown;
+}
+
+.bi-broadcast-pin {
+    color: forestgreen;
+}
+
+.bi-arrow-up-short {
+    color: red;
+}
+
+.bi-arrow-down-short {
+    color: dodgerblue;
+}
+
+.bi-droplet-fill {
+    color: cornflowerblue;
+}
+
+.voltar {
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+    margin-right: 25px;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 25px;
+    background-image: linear-gradient(to bottom, #5296ef, #444baf 130%);
+    border-color: white;
+}
+
+.fonte {
+    font-size: 12px;
+    cursor: pointer;
+    float: left;
+    margin-top: 200px;
+    margin-left: 10px;
+    font-style: italic;
+    text-decoration: none;
+}
+
+.container-fluid {
+    padding: 0;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.busca {
+    margin-left: 2px;
+    border-width: 1px;
+    border-bottom-style: solid;
+    border-top-style: solid;
+    border-color: #cdc3c3;
+    margin-top: 20px;
+}
+
+.busca-conteudo {
+    margin-left: 2px;
+}
+
+.gif {
+    float: right;
+    width: 80px;
+    height: 80px;
+    margin-right: 25px;
+}
+
+.cidade {
+    color: cadetblue;
+}
+
+footer {
+    margin-top: 300px;
+    color: #02295e;
+    height: 90px;
+    border-top: 2px solid #9a9a9a;
+    text-decoration: none;
+}
+
+form {
+    width: 700px;
+    border-color: #cdc3c3;
+    margin-right: 25px;
+    font-family: "Calibri Light", sans-serif;
+    margin-top: 25px;
+}
+
+.avisos {
+    font-family: "Bahnschrift", sans-serif;
+    margin-left: 10px;
+}
+
+.midias img{
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    margin-right: 20px;
+    float: right;
+    margin-top: 200px;
+}

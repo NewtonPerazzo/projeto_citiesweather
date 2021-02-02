@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %} Cities Weather - Adicionar cidade {% endblock %}
+
+{% block content %}
+    <div class="container-fluid">
+        <h1 class="avisos">Insira qual cidade deseja saber o clima e seu respectivo país.</h1>
+        <ul class="avisos">
+            Observações:
+            <li style="margin-left: 10px">
+                O nome do país deve ser em português;
+            </li>
+            <li style="margin-left: 10px">
+                O sistema retorna somente as cidades cadastradas pelo <a href="https://openweathermap.org/" >Open Weather</a>.
+            </li>
+        </ul>
+        <form method="POST">
+            {% csrf_token %}
+            {{ form.as_table }}
+            {{ form.message }}
+            <p>
+                <a href="{% url 'resultado'%}">
+                    <input type="submit" value="Ver clima" class="voltar">
+                </a>
+            </p>
+        </form>
+    </div>
+{% endblock %}

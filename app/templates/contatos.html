@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Cities Weather - Contatos {% endblock %}
+
+{% block content %}
+    <div class="contatos">
+        <ul>
+           <li>
+               <div class="card" style="width: 18rem;">
+                   <img src="{% static 'img/telefone.png' %}" style="width: 60px; height: 50px" class="card-img-top" alt="...">
+                   <div class="card-body">
+                       <h5 class="card-title">Celular e WhatsApp</h5>
+                       <a class="btn btn-primary" href="tel:+5575992332364"> +55 (75) 99233-2364</a>
+                   </div>
+               </div>
+           </li>
+            <li>
+                <div class="card" style="width: 18rem;">
+                    <img src="{% static 'img/email.png' %}" style="width: 60px; height: 50px" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">E-mail</h5>
+                        <a class="btn btn-primary" href="mailto:perazzoneto99@hotmail.com"> perazzoneto99@hotmail.com </a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="container-fluid">
+            <div class="midias">
+                <a href="https://www.instagram.com/perazzoneto/" target="_blank"><img src="{% static 'img/instagram.png' %}"></a>
+                <a href="https://www.facebook.com/netoperazzo/" target="_blank"><img src="{% static 'img/facebook.png' %}"></a>
+            </div>
+        </div>
+    </div>
+{% endblock %}
