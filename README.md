@@ -52,10 +52,10 @@ e a apresentação do site.</p>
 Para ver o clima, basta clicar no botão de "Adicionar cidade" e inserir o nome do município e seu respectivo país
 que o programa redirecionará para as informações de clima daquela cidade no momento.
 Clicando em voltar, é possível ir para a página inicial.</p>
-Ao adicionar a cidade e o país, os dados vão para o Banco de Dados SQLite padrão e, posteriormente, são
-passados como argumento de pesquisa na API. Caso sejam encontradas informações, as informações são tratadas na 
 
-```view``` , renderizada no template e exibido. Ao voltar para o início, os dados inseridos no banco são automaticamente excluídos
+Ao adicionar a cidade e o país, os dados vão para o Banco de Dados SQLite padrão e, posteriormente, são passados como
+argumento de pesquisa na API. Caso sejam encontradas informações, as informações são tratadas na ```view```,
+renderizada no template e exibido. Ao voltar para o início, os dados inseridos no banco são automaticamente excluídos
 para evitar dados desnecessários no banco e consumir memória. Caso não sejam encontradas, é renderizado um
 template padrão de "não encontrado", possibilitando uma nova busca.
 
