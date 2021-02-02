@@ -65,8 +65,9 @@ def resultado(request):
     """
 
     pais_traduzido = translator.translate(cidade[0].pais, src='pt', dest='en')
-    pais_traduzido = str(pais_traduzido.text)
-    sigla = pycountry_convert.country_name_to_country_alpha2(pais_traduzido.title())
+
+    # Para utilizar a string na biblioteca googletrans, é necessário passar o parâmetro .text.
+    sigla = pycountry_convert.country_name_to_country_alpha2(pais_traduzido.text.title())
 
     # Se a cidade existir na API, a chave "cod" tem o valor 200. Se não, 404. Desta forma renderizo um template padrão
     # para as cidades não encontradas.
