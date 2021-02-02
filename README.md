@@ -10,7 +10,7 @@
 * Desenvolvimento Frontend 🎨
 
 
-<h3>Linguagem, Frameworks, Bibliotecas e Frontend utilizados</h3>💼
+<h3>Linguagem, Frameworks, Bibliotecas e Frontend utilizados 💼</h3>
 
 ```
 * Linguagem: Python 3;
@@ -24,7 +24,7 @@
 ````
 
 
-<h3>Como rodar o projeto em sua máquina</h3> 🛠
+<h3>Como rodar o projeto em sua máquina 🛠</h3> 
 
 <h5>
 Você pode baixar o repositório pelo próprio GitHub ou cloná-lo através do Git + sua chave SSH, utilizando o comando
@@ -59,7 +59,7 @@ para evitar dados desnecessários no banco e consumir armazenamento. Caso não s
 template padrão de "não encontrado", possibilitando uma nova busca.</p>
 </h5>
 
-<h3>Conclusão</h3>✅
+<h3>Conclusão ✅</h3>
 <h5>
 <p>O projeto foi bastante proveitoso, visto que foi necessário entender primeiro a API para depois fazer o código, 
 servindo de lição para projetos futuros. A utilização de libs também foi bastante útil, pois ajudou a resolver alguns
