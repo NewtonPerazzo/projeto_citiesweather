@@ -1,9 +1,9 @@
-# projeto_citiesweather 🚀
+# Projeto Cities Weather 🚀
 
 <h4>Este projeto tem como objetivo pôr em prática alguns conhecimentos de python, tais como:</h3>
 
 * Desenvolvimento Web;
-* Manipulação de API;
+* Manipulação de API ![API](api.png)
 * Manipulação do ORM do Django;
 * Manipulação de Banco de Dados;
 * Utilização de bibliotecas;
