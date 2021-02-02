@@ -3,7 +3,7 @@
 <h4>Este projeto tem como objetivo pôr em prática alguns conhecimentos de python, tais como:</h3>
 
 * Desenvolvimento Web;
-* Manipulação de API ![API](api.png)
+* Manipulação de API ![Alt text](relative/readme.img/to/api.png?raw=true "Title")
 * Manipulação do ORM do Django;
 * Manipulação de Banco de Dados;
 * Utilização de bibliotecas;
