@@ -2,15 +2,15 @@
 
 <h4>Este projeto tem como objetivo pôr em prática alguns conhecimentos de python, tais como:</h3>
 
-* Desenvolvimento Web;
-* Manipulação de API ![Alt text](relative/readme.img/to/api.png?raw=true "Title")
-* Manipulação do ORM do Django;
-* Manipulação de Banco de Dados;
-* Utilização de bibliotecas;
-* Desenvolvimento Frontend. 
+* Desenvolvimento Web 💻
+* Manipulação de API ⚙
+* Manipulação do ORM do Django 🐍
+* Manipulação de Banco de Dados 🏢
+* Utilização de bibliotecas 📚
+* Desenvolvimento Frontend 🎨
 
 
-<h3>Linguagem, Frameworks, Bibliotecas e Frontend utilizados</h3>
+<h3>Linguagem, Frameworks, Bibliotecas e Frontend utilizados</h3>💼
 
 ```
 * Linguagem: Python 3;
@@ -24,7 +24,7 @@
 ````
 
 
-<h3>Como rodar o projeto em sua máquina</h3>
+<h3>Como rodar o projeto em sua máquina</h3> 🛠
 
 <h5>
 Você pode baixar o repositório pelo próprio GitHub ou cloná-lo através do Git + sua chave SSH, utilizando o comando
@@ -42,7 +42,7 @@ Ativada a VirtualEnv, basta passar o comando, também no terminal, `python manag
 `http://127.0.0.1:8000/` e basta acessá-lo para ver o site.
 </h5>
 
-<h3>Explicando o site</h3>
+<h3>Explicando o site ⛅</h3>
 
 <h5>
 <p>O projeto Cities Weather funciona basicamente para informar o clima de várias cidades do mundo. Utilizei a API Open 
@@ -59,7 +59,7 @@ para evitar dados desnecessários no banco e consumir armazenamento. Caso não s
 template padrão de "não encontrado", possibilitando uma nova busca.</p>
 </h5>
 
-<h3>Conclusão</h3>
+<h3>Conclusão</h3>✅
 <h5>
 <p>O projeto foi bastante proveitoso, visto que foi necessário entender primeiro a API para depois fazer o código, 
 servindo de lição para projetos futuros. A utilização de libs também foi bastante útil, pois ajudou a resolver alguns
