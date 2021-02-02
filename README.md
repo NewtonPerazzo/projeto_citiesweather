@@ -11,6 +11,7 @@
 
 
 <h3>Linguagem, Frameworks, Bibliotecas e Frontend utilizados</h3>
+
 ```
 * Linguagem: Python 3;
 * Framework Web: Django;
@@ -19,6 +20,7 @@
     - pycountry_convert;
     - googletrans.
 * Bootstrap, HTML e CSS.
+
 ````
 
 
