@@ -1,0 +1,9 @@
+cryspy==0.5.5
+Django==3.1.6
+freeze==3.0
+googletrans==3.0.0
+pycountry==20.7.3
+pycountry-convert==0.7.2
+requests==2.25.1
+virtualenv==20.4.2
+
