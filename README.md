@@ -39,8 +39,7 @@ a máquina virtual (VirtualEnv).
     python manage.py migrate
     python manage.py runserver
     
-Ativada a VirtualEnv, basta passar o comando, também no terminal, `python manage.py runserver` para o servidor ser startado. Será informado o link 
-`http://127.0.0.1:8000/` e basta acessá-lo para ver o site funcionando.
+Será informado o link `http://127.0.0.1:8000/` e basta acessá-lo para ver o site funcionando.
 </h5>
 
 <h3>Explicando a funcionalidade do sistema ⛅</h3>
