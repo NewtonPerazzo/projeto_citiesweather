@@ -35,9 +35,10 @@ Após baixar o repositório em sua máquina e abri-lo com uma IDE de sua prefer�
 a máquina virtual (VirtualEnv). 
 <p>No terminal, execute os seguintes comandos: </p> 
 
-    cd .venv\Scripts  # Para abrir o .exe ativador da VirtualEnv
-    activate  # Executando o .exe
-    cd {caminho do diretório onde encontra-se o projeto}  # Voltando ao diretório principal para executar o servidor
+    python manage.py makemigrations
+    python manage.py migrate
+    python manage.py runserver
+    
 Ativada a VirtualEnv, basta passar o comando, também no terminal, `python manage.py runserver` para o servidor ser startado. Será informado o link 
 `http://127.0.0.1:8000/` e basta acessá-lo para ver o site funcionando.
 </h5>
