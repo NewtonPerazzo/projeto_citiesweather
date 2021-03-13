@@ -4,10 +4,12 @@
 {% block title%}Cities Weather {% endblock %}
 
 {% block content %}
-    <p class="busca"> <a class="busca-conteudo">Você está vendo a busca para: </a></p>
-    <img src="{% static 'img/gif.gif' %}" class="gif">
+<p class="busca" xmlns="http://www.w3.org/1999/html"> <a class="busca-conteudo">Você está vendo a busca para: </a></p>
     <div class="container-fluid">
-        <h1>Dados metereológicos para <a class="cidade">{{ cidade }} - {{ pais }}</a>: </h1>
+        <h1>Não foi encontrada a cidade <a class="cidade">{{ cidade.nome.capitalize }} - {{cidade.pais.capitalize}}</a>, somente no país <a class="cidade">{{ pais.capitalize }}</a>.</h1>
+        <div style="padding-top: 10px;">
+            <p> Veja a baixo os resultaods para  <a class="cidade">{{ cidade.nome }} - {{ pais }}</a>:</p>
+        </div>
         <div class="dados">
             <div class="clima-div">
                 <p>Temperatura

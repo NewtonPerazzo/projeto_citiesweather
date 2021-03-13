@@ -1,6 +1,5 @@
 cryspy==0.5.5
 Django==3.1.6
-freeze==3.0
 googletrans==4.0.0rc1
 pycountry==20.7.3
 pycountry-convert==0.7.2
