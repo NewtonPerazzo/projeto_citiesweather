@@ -12,7 +12,7 @@ key = '70b0b23f44fef00dda39631a4583ef94'
 
 # Função responsável somente por iniciar o sistema.
 def home(request):
-    return render(request, 'home.html')
+    return render(request, 'app/home.html')
 
 
 """
@@ -32,7 +32,7 @@ def addcidade(request):
             return redirect('resultado')
     else:
         form = CidadeForm
-    return render(request, 'addcidade.html', {'form': form})
+    return render(request, 'app/addcidade.html', {'form': form})
 
 
 # Função responsável por buscar o clima da cidade na API e exibir no template.
@@ -86,7 +86,7 @@ def resultado(request):
             pais = cidade_infos["sys"]["country"]
 
             context = {
-                'cidade': cidade[0].nome.upper(), # Passo o .upper() somente para questão de estética.
+                'cidade': cidade[0].nome.upper(),  # Passo o .upper() somente para questão de estética.
                 'clima': clima,
                 'sensacao': sensacao,
                 'minima': minima,
@@ -94,14 +94,39 @@ def resultado(request):
                 'umidade': umidade,
                 'pais': pais
             }
-            return render(request, 'resultado.html', context)
+            return render(request, 'app/resultado.html', context)
+
         else:
+            clima = cidade_infos["main"]["temp"]
+            sensacao = cidade_infos["main"]["feels_like"]
+            minima = cidade_infos["main"]["temp_min"]
+            maxima = cidade_infos["main"]["temp_max"]
+            umidade = cidade_infos["main"]["humidity"]
+            pais_achado = cidade_infos["sys"]["country"].upper()
+
+            # Como pais_achado vem como sigla, crio a variável pais_achado_nome para exibir o nome para o usuário
+            pais_achado_nome = pycountry_convert.country_alpha2_to_country_name(pais_achado)
+
             # Utilizo a função title() somente por estética
-            return render(request, 'not_found.html', {'cidade': cidade[0].nome.title(), 'pais': cidade[0].pais.title()})
+            context = {
+                'mensagem': mensagem,
+                'cidade': cidade[0],
+                'pais': pais_achado_nome,
+                'clima': clima,
+                'sensacao': sensacao,
+                'minima': minima,
+                'maxima': maxima,
+                'umidade': umidade,
+            }
+            return render(request, 'app/resultado_diferente.html', context)
     else:
-        return render(request, 'not_found.html', {'cidade': cidade[0].nome.title(), 'pais': cidade[0].pais.title()})
+        context = {
+            'cidade': cidade[0].nome.title(),
+            'pais': cidade[0].pais.title()
+        }
+        return render(request, 'app/not_found.html', context)
 
 
 def contatos(request):
-    return render(request, 'contatos.html')
+    return render(request, 'app/contatos.html')
 
