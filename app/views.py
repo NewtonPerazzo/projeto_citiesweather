@@ -107,6 +107,7 @@ def resultado(request):
             # Como pais_achado vem como sigla, crio a variável pais_achado_nome para exibir o nome para o usuário
             pais_achado_nome = pycountry_convert.country_alpha2_to_country_name(pais_achado)
 
+            mensagem = "Não foi possível encontrar a cidade {}".format(cidade[0])
             # Utilizo a função title() somente por estética
             context = {
                 'mensagem': mensagem,

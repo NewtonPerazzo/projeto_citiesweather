@@ -154,9 +154,8 @@ body {
 .fonte {
     font-size: 12px;
     cursor: pointer;
-    float: left;
-    margin-top: 200px;
-    margin-left: 10px;
+    float: right;
+    margin-right: 10px;
     font-style: italic;
     text-decoration: none;
 }
@@ -192,7 +191,9 @@ body {
 }
 
 footer {
-    margin-top: 300px;
+    position:absolute;
+    bottom:0;
+    width:100%;
     color: #02295e;
     height: 90px;
     border-top: 2px solid #9a9a9a;
